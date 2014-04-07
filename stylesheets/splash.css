@@ -1,0 +1,347 @@
+/**
+ * CSS for Famous Sign Up Page
+ * author: Steve Newcomb
+ */
+
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/**
+ * general stylings
+ */
+
+strong {
+    font-weight: 600;
+}
+
+
+/**
+ * elements stylings
+ */
+body {
+    background-image: 	url("/images/famous-bg.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    /* center inner div */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+
+    display: -moz-box;
+    -moz-box-pack: center;
+
+    display: -ms-box;
+    -ms-box-pack: center;
+
+    display: box;
+    box-pack: center;
+}
+
+#container {
+    width: 950px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    margin-top: 30px;
+
+    /* rounded corners */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* box shadow */
+    -webkit-box-shadow: 0 0 50px black;
+    -moz-box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px black;
+}
+
+#signup {
+    background-image: url("/images/signup-bg.jpg");
+    background-repeat: no-repeat;
+    /*
+        position: absolute;
+        top: 32px;
+    */
+    position: relative;
+    margin-top: 60px;
+    left: 0px;
+    width: 950px;
+    height: 100px;
+
+    /* center inner div */
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-orient: horizontal;
+
+    display: -ms-box;
+    -ms-box-align: center;
+    -ms-box-orient: horizontal;
+
+    display: box;
+    box-align: center;
+    box-orient: horizontal;
+}
+
+#signup-text{
+    width: 384px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    text-shadow: 0px -1px 1px #4d4d4d;
+    font-weight: 300;
+}
+
+#signup-spacer{
+    width: 100px;
+}
+
+#signup-form {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex:1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+}
+
+.form {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 10px;
+    padding: 10px;
+    margin: 10px;
+    -webkit-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#usage_info {
+    width: 50px;
+}
+
+#email {
+    width: 130px;
+}
+
+.button {
+    width: 40px;
+}
+
+#message-container {
+    position: relative;
+    padding: 40px 0;
+    width: 740px;
+    margin: 0 auto;
+}
+
+
+.messages {
+    position: relative;
+    text-align: right;
+    color: #7d7d7d;
+    font-weight: 300;
+    float: left;
+    width: 100%;
+    line-height: 1.2em;
+}
+
+#maintitle {
+    font-size: 22px;
+    word-spacing: 2px;
+}
+
+#subtitle {
+    font-size: 17px;
+    font-style: italic;
+}
+
+#videos-container {
+    color: #7d7d7d;
+    margin-top: 50px;
+
+    /* center inner div */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+
+    display: -moz-box;
+    -moz-box-pack: center;
+
+    display: -ms-box;
+    -ms-box-pack: center;
+
+    display: box;
+    box-pack: center;
+}
+
+.video-title {
+    text-align: center;
+}
+
+.video-box iframe {
+    border-radius: 5px;
+    border: 5px solid #EEE;
+    overflow: hidden;
+    margin: 20px 20px;
+    -webkit-box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    -ms-box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+}
+
+#twitter-handle {
+    margin: 30px 0 0 0;
+}
+
+#copyright {
+    padding-top: 4px;
+    margin: 0 0 0 30px;
+    color: #AAA;
+}
+
+
+#twitter-handle a {
+    background-image: url("/images/twitter-logo.jpg");
+    background-repeat: no-repeat;
+    background-position: 81px -9px;
+    text-decoration: none;
+    color: #9D9D9D;
+    font-weight: bold;
+    background-size: 42px;
+    line-height: 24px;
+    width: 126px;
+    position: absolute;
+    right: 38px;
+}
+
+#thankyou_container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#thankyou {
+    position: absolute;
+    margin-left: -250px;
+    margin-top: -150px;
+    padding: 30px;
+    top: 35%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    border-radius: 5px;
+}
+
+#thankyou p {
+    margin: 16px 0;
+}
+
+#validation-message {
+    display: block;
+}
+
+.tweet-button-container {
+    text-align: center;
+}
+
+.tweet-button {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+#custom-tweet-button a {
+    display: block;
+    padding: 0 7px 0 28px;
+    background: url('https://twitter.com/favicons/favicon.ico') 7px center no-repeat, -webkit-linear-gradient(top, #fff, #dedede);
+    background: url('https://twitter.com/favicons/favicon.ico') 7px center no-repeat, -moz-linear-gradient(top, #fff, #dedede);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+    line-height: 26px;
+}
+
+#close_thankyou {
+    background-image: url("/images/close_icon.png");
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -22px;
+    right: -22px;
+    cursor: pointer;
+}
